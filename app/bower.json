@@ -1,9 +1,9 @@
 {
-  "name": "route-map-ui",
+  "name": "social-network",
   "authors": [
     "Akash Shakdwipeea <ashakdwipeea@gmail.com>"
   ],
-  "description": "Route map visualization",
+  "description": "Social n/w visualization",
   "main": "main.js",
   "license": "MIT",
   "homepage": "",
