@@ -16,7 +16,7 @@ public class SocialNetworkConfiguration extends Configuration {
     private String dbPath;
 
     public Driver getGraphDB() {
-        return GraphDatabase.driver("bolt://localhost", AuthTokens.basic("neo4j", "root"));
+        return GraphDatabase.driver("bolt://social-network-db", AuthTokens.basic("neo4j", "root"));
     }
 
     @JsonProperty("dbPath")
