@@ -1,0 +1,25 @@
+{
+  "name": "route-map-ui",
+  "authors": [
+    "Akash Shakdwipeea <ashakdwipeea@gmail.com>"
+  ],
+  "description": "Route map visualization",
+  "main": "main.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "axios": "^0.12.0",
+    "vis": "^4.16.1",
+    "handlebars": "^4.0.5",
+    "toastr": "^2.1.2",
+    "jquery": "^3.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+.idea/
+
+app/.idea
+app/bower_components
+
+server/dependency-reduced-pom.xml
+server/route-map.iml
+
+data/

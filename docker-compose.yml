@@ -1,0 +1,26 @@
+version: '2'
+services:
+  neo4j:
+    image: neo4j:3.0
+    container_name: social-network-db
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - /home/akash/workspace/jivox-hack/social-network/data:/data
+  api:
+    build: server
+    container_name: social-network
+    ports:
+      - "8080:8080"
+    depends_on:
+      - neo4j
+  web:
+    build:  app
+    container_name: 'social-network-ui'
+    volumes:
+      - ./app:/usr/share/nginx/html
+    ports:
+      - "9000:80"
+    links:
+      - api
